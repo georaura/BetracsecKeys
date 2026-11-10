@@ -11,15 +11,15 @@
 #
 # Para que otros Macs lo instalen sin avisos hacen falta (ver PUBLICAR.md):
 #   - "Developer ID Application" (firma app y plugins) y "Developer ID Installer" (firma el .pkg)
-#   - un perfil de notarización:  NOTARY_PROFILE=betracsec ./build_public.sh
-#   - la clave EdDSA de Sparkle en el llavero (cuenta "betracsec-keys")
+#   - un perfil de notarización:  NOTARY_PROFILE=betracks ./build_public.sh
+#   - la clave EdDSA de Sparkle en el llavero (cuenta "betracks-keys")
 set -euo pipefail
 cd "$(dirname "$0")"
 
 NAME="BeTracks Keys"
-EXE="BetracsecKeys"
+EXE="BeTracksKeys"   # nombre de los archivos de descarga (.pkg, .dmg), igual que en Windows
 SITE="https://betracksec.com/keys"
-KEY_ACCOUNT="betracsec-keys"
+KEY_ACCOUNT="betracks-keys"
 MIN_OS="12.0"
 VERSION="$(cat VERSION)"
 OUT="build-public"
@@ -137,7 +137,7 @@ EN
 Requirements: macOS $MIN_OS or later, Apple silicon or Intel.
 
 Nord y Nord Piano Library son marcas de Clavia DMI AB. BeTracks Keys no está afiliada a Clavia.
-Código fuente (AGPL-3.0): $SITE/downloads/$EXE-$VERSION-source.zip
+Código fuente (AGPL-3.0): https://github.com/georaura/BetracsecKeys
 TXT
 hdiutil create -volname "$NAME $VERSION" -srcfolder "$D" -ov -format UDZO "$DMG" >/dev/null
 rm -rf "$D"
