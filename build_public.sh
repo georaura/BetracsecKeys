@@ -125,18 +125,19 @@ ES
 1. Abre "Instalar $NAME.pkg". Instala la app en Aplicaciones y los plugins AU y VST3
    (puedes elegir cuáles en "Personalizar").
 2. Abre BeTracks Keys (o búscalo en tu DAW entre los instrumentos de BeTracks).
-3. Biblioteca → Añadir carpeta… y elige la carpeta con tus pianos .npno.
-   No incluye sonidos: la Nord Piano Library se descarga gratis en nordkeyboards.com.
+3. Biblioteca → Muestrear un instrumento externo, o Biblioteca → Añadir carpeta… con las librerías
+   compatibles de teclados icónicos que ya tengas. No incluye sonidos.
 Requisitos: macOS $MIN_OS o posterior, Apple silicon o Intel.
 
 EN
 1. Open "Instalar $NAME.pkg". It installs the app and the AU and VST3 plug-ins.
 2. Open BeTracks Keys (or find it under BeTracks in your DAW).
-3. Library (Biblioteca) → Add folder… and pick the folder with your .npno pianos.
-   No sounds are included: the Nord Piano Library is a free download at nordkeyboards.com.
+3. Library (Biblioteca) → Sample an external instrument, or Library → Add folder… with compatible libraries
+   from iconic keyboards you already own. No sounds are included.
 Requirements: macOS $MIN_OS or later, Apple silicon or Intel.
 
-Nord y Nord Piano Library son marcas de Clavia DMI AB. BeTracks Keys no está afiliada a Clavia.
+BeTracks™ y su logotipo son marca de su titular. BeTracks Keys no está afiliada a ningún fabricante de
+instrumentos. Software en desarrollo, sin garantía; aviso legal: docs/LEGAL.md en el código fuente.
 Código fuente (AGPL-3.0): https://github.com/georaura/BetracsecKeys
 TXT
 hdiutil create -volname "$NAME $VERSION" -srcfolder "$D" -ov -format UDZO "$DMG" >/dev/null
