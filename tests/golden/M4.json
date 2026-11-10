@@ -1,0 +1,507 @@
+{
+ "identity": {
+  "name": "Keys Test Multi",
+  "variant": "synthetic",
+  "version": "6.00",
+  "versionRaw": 600
+ },
+ "zones": [
+  {
+   "rootNote": 46,
+   "lowNote": 36,
+   "highNote": 47
+  },
+  {
+   "rootNote": 58,
+   "lowNote": 48,
+   "highNote": 59
+  },
+  {
+   "rootNote": 70,
+   "lowNote": 60,
+   "highNote": 71
+  },
+  {
+   "rootNote": 95,
+   "lowNote": 72,
+   "highNote": 96
+  }
+ ],
+ "directory": {
+  "version": 1124,
+  "channels": 2,
+  "blockWords": 1022,
+  "strokes": [
+   {
+    "index": 0,
+    "offset": 3940,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 54099,
+    "blocks": 28,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44210,
+     "length": 8710
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 0
+   },
+   {
+    "index": 1,
+    "offset": 61172,
+    "velocityFrom": 60,
+    "flags": 0,
+    "release": false,
+    "frames": 54508,
+    "blocks": 28,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44210,
+     "length": 8710
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 0
+   },
+   {
+    "index": 2,
+    "offset": 118404,
+    "velocityFrom": 130,
+    "flags": 0,
+    "release": false,
+    "frames": 54703,
+    "blocks": 28,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44210,
+     "length": 8710
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 0
+   },
+   {
+    "index": 3,
+    "offset": 175636,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 54448,
+    "blocks": 35,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44060,
+     "length": 8860
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 1
+   },
+   {
+    "index": 4,
+    "offset": 247176,
+    "velocityFrom": 60,
+    "flags": 0,
+    "release": false,
+    "frames": 54032,
+    "blocks": 29,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44060,
+     "length": 8860
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 1
+   },
+   {
+    "index": 5,
+    "offset": 306452,
+    "velocityFrom": 130,
+    "flags": 0,
+    "release": false,
+    "frames": 54508,
+    "blocks": 28,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44060,
+     "length": 8860
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 1
+   },
+   {
+    "index": 6,
+    "offset": 363684,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 54144,
+    "blocks": 47,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44135,
+     "length": 8785
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 2
+   },
+   {
+    "index": 7,
+    "offset": 459752,
+    "velocityFrom": 60,
+    "flags": 0,
+    "release": false,
+    "frames": 54448,
+    "blocks": 35,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44135,
+     "length": 8785
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 2
+   },
+   {
+    "index": 8,
+    "offset": 531292,
+    "velocityFrom": 130,
+    "flags": 0,
+    "release": false,
+    "frames": 54240,
+    "blocks": 32,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44135,
+     "length": 8785
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 2
+   },
+   {
+    "index": 9,
+    "offset": 596700,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 53059,
+    "blocks": 95,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44097,
+     "length": 8823
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 3
+   },
+   {
+    "index": 10,
+    "offset": 790880,
+    "velocityFrom": 60,
+    "flags": 0,
+    "release": false,
+    "frames": 53634,
+    "blocks": 76,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44097,
+     "length": 8823
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 3
+   },
+   {
+    "index": 11,
+    "offset": 946224,
+    "velocityFrom": 130,
+    "flags": 0,
+    "release": false,
+    "frames": 53131,
+    "blocks": 55,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44097,
+     "length": 8823
+    },
+    "loopDecay": 0.9999843835830688,
+    "zone": 3
+   }
+  ]
+ },
+ "picks": [
+  [
+   [
+    1,
+    2
+   ],
+   [
+    20,
+    2
+   ],
+   [
+    40,
+    2
+   ],
+   [
+    64,
+    1
+   ],
+   [
+    90,
+    0
+   ],
+   [
+    110,
+    0
+   ],
+   [
+    127,
+    0
+   ]
+  ],
+  [
+   [
+    1,
+    5
+   ],
+   [
+    20,
+    5
+   ],
+   [
+    40,
+    5
+   ],
+   [
+    64,
+    4
+   ],
+   [
+    90,
+    3
+   ],
+   [
+    110,
+    3
+   ],
+   [
+    127,
+    3
+   ]
+  ],
+  [
+   [
+    1,
+    8
+   ],
+   [
+    20,
+    8
+   ],
+   [
+    40,
+    8
+   ],
+   [
+    64,
+    7
+   ],
+   [
+    90,
+    6
+   ],
+   [
+    110,
+    6
+   ],
+   [
+    127,
+    6
+   ]
+  ],
+  [
+   [
+    1,
+    11
+   ],
+   [
+    20,
+    11
+   ],
+   [
+    40,
+    11
+   ],
+   [
+    64,
+    10
+   ],
+   [
+    90,
+    9
+   ],
+   [
+    110,
+    9
+   ],
+   [
+    127,
+    9
+   ]
+  ]
+ ]
+}

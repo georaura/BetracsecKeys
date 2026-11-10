@@ -1,0 +1,112 @@
+{
+ "identity": {
+  "name": "OpenNord Test 2",
+  "variant": "A440 2 layers",
+  "version": "6.00",
+  "versionRaw": 600
+ },
+ "zones": [
+  {
+   "rootNote": 68,
+   "lowNote": 57,
+   "highNote": 69
+  }
+ ],
+ "directory": {
+  "version": 1124,
+  "channels": 2,
+  "blockWords": 1022,
+  "strokes": [
+   {
+    "index": 0,
+    "offset": 3940,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 66788,
+    "blocks": 105,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44068,
+     "length": 22082
+    },
+    "loopDecay": 0.9999397993087769,
+    "zone": 0
+   },
+   {
+    "index": 1,
+    "offset": 218560,
+    "velocityFrom": 100,
+    "flags": 0,
+    "release": false,
+    "frames": 67252,
+    "blocks": 34,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44068,
+     "length": 22082
+    },
+    "loopDecay": 0.9999397993087769,
+    "zone": 0
+   }
+  ]
+ },
+ "picks": [
+  [
+   [
+    1,
+    1
+   ],
+   [
+    20,
+    1
+   ],
+   [
+    40,
+    1
+   ],
+   [
+    64,
+    1
+   ],
+   [
+    90,
+    0
+   ],
+   [
+    110,
+    0
+   ],
+   [
+    127,
+    0
+   ]
+  ]
+ ]
+}

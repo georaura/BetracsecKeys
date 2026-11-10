@@ -1,0 +1,13 @@
+name OpenNord Test 1
+variant A440 loop
+version 6.00
+dir 1124 2 1022 1
+zone 68 57 69
+stroke 0 0 0 0 67467 44068 22082
+pick 0 1 0
+pick 0 20 0
+pick 0 40 0
+pick 0 64 0
+pick 0 90 0
+pick 0 110 0
+pick 0 127 0

@@ -1,0 +1,124 @@
+{
+ "identity": {
+  "name": "Keys Test Mono",
+  "version": "6.00",
+  "versionRaw": 600
+ },
+ "zones": [
+  {
+   "rootNote": 59,
+   "lowNote": 48,
+   "highNote": 60
+  },
+  {
+   "rootNote": 71,
+   "lowNote": 61,
+   "highNote": 72
+  }
+ ],
+ "directory": {
+  "version": 1124,
+  "channels": 1,
+  "blockWords": 511,
+  "strokes": [
+   {
+    "index": 0,
+    "offset": 2918,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 35814,
+    "blocks": 21,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "zone": 0
+   },
+   {
+    "index": 1,
+    "offset": 24380,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 35800,
+    "blocks": 25,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "zone": 1
+   }
+  ]
+ },
+ "picks": [
+  [
+   [
+    1,
+    0
+   ],
+   [
+    20,
+    0
+   ],
+   [
+    40,
+    0
+   ],
+   [
+    64,
+    0
+   ],
+   [
+    90,
+    0
+   ],
+   [
+    110,
+    0
+   ],
+   [
+    127,
+    0
+   ]
+  ],
+  [
+   [
+    1,
+    1
+   ],
+   [
+    20,
+    1
+   ],
+   [
+    40,
+    1
+   ],
+   [
+    64,
+    1
+   ],
+   [
+    90,
+    1
+   ],
+   [
+    110,
+    1
+   ],
+   [
+    127,
+    1
+   ]
+  ]
+ ]
+}

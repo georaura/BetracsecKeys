@@ -1,0 +1,147 @@
+{
+ "identity": {
+  "name": "OpenNord Test 3",
+  "variant": "A220+A440",
+  "version": "6.00",
+  "versionRaw": 600
+ },
+ "zones": [
+  {
+   "rootNote": 56,
+   "lowNote": 45,
+   "highNote": 57
+  },
+  {
+   "rootNote": 68,
+   "lowNote": 58,
+   "highNote": 69
+  }
+ ],
+ "directory": {
+  "version": 1124,
+  "channels": 2,
+  "blockWords": 1022,
+  "strokes": [
+   {
+    "index": 0,
+    "offset": 3940,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 67252,
+    "blocks": 34,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44068,
+     "length": 22082
+    },
+    "loopDecay": 0.9999574422836304,
+    "zone": 0
+   },
+   {
+    "index": 1,
+    "offset": 73436,
+    "velocityFrom": 0,
+    "flags": 0,
+    "release": false,
+    "frames": 67467,
+    "blocks": 43,
+    "history": [
+     [
+      0,
+      0,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      0
+     ]
+    ],
+    "loop": {
+     "start": 44068,
+     "length": 22082
+    },
+    "loopDecay": 0.9999397993087769,
+    "zone": 1
+   }
+  ]
+ },
+ "picks": [
+  [
+   [
+    1,
+    0
+   ],
+   [
+    20,
+    0
+   ],
+   [
+    40,
+    0
+   ],
+   [
+    64,
+    0
+   ],
+   [
+    90,
+    0
+   ],
+   [
+    110,
+    0
+   ],
+   [
+    127,
+    0
+   ]
+  ],
+  [
+   [
+    1,
+    1
+   ],
+   [
+    20,
+    1
+   ],
+   [
+    40,
+    1
+   ],
+   [
+    64,
+    1
+   ],
+   [
+    90,
+    1
+   ],
+   [
+    110,
+    1
+   ],
+   [
+    127,
+    1
+   ]
+  ]
+ ]
+}

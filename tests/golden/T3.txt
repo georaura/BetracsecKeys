@@ -1,0 +1,22 @@
+name OpenNord Test 3
+variant A220+A440
+version 6.00
+dir 1124 2 1022 2
+zone 56 45 57
+zone 68 58 69
+stroke 0 0 0 0 67252 44068 22082
+stroke 1 1 0 0 67467 44068 22082
+pick 0 1 0
+pick 0 20 0
+pick 0 40 0
+pick 0 64 0
+pick 0 90 0
+pick 0 110 0
+pick 0 127 0
+pick 1 1 1
+pick 1 20 1
+pick 1 40 1
+pick 1 64 1
+pick 1 90 1
+pick 1 110 1
+pick 1 127 1

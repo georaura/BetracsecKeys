@@ -1,0 +1,39 @@
+# Compilaciones
+build/
+build-*/
+*.part
+
+# Herramientas locales del Mac (cmake, node, esbuild): se instalan aparte
+tools/cmake/
+tools/node/
+tools/esbuild/
+
+# Referencia de terceros, nunca en el repositorio (plugin de Windows de otro autor, sin código fuente)
+WX Stage-IV/
+
+# OpenNord se usa fijado por commit (vendor/opennord.COMMIT) para las herramientas de comparación;
+# su código ya es público y no hace falta copiarlo aquí.
+vendor/opennord/
+# Sparkle es un binario de Mac: build_public.sh lo descarga
+vendor/Sparkle/
+
+# Audio y librerías de terceros: Keys no distribuye sonidos de Nord, Yamaha ni Roland
+*.npno
+*.nsmp3
+*.nsmp4
+*.ns4p
+*.ns4o
+*.ns4y
+*.ns4n
+*.X7L
+*.X7U
+*.X8L
+*.X8U
+*.sfgr
+*.bkm
+*.wav
+*.exz
+!tests/golden/*.npno
+
+.DS_Store
+.claude/

@@ -1,0 +1,23 @@
+# Pruebas del núcleo de Keys en Windows (las que no necesitan archivos de fábrica): el decodificador y el
+# motor de piano contra los pianos sintéticos de tests/golden, y la exportación a BeTracks Pro. Las corre
+# .github/workflows/windows.yml con ctest desde la raíz del proyecto (las pruebas usan rutas relativas).
+cmake_minimum_required(VERSION 3.22)
+project(KeysCoreTests LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+get_filename_component(ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../.." ABSOLUTE)
+file(MAKE_DIRECTORY "${ROOT}/build/tests")
+if(MSVC)
+    add_compile_options(/utf-8 /EHsc)
+    add_compile_definitions(_USE_MATH_DEFINES NOMINMAX _CRT_SECURE_NO_WARNINGS)
+endif()
+set(CORE ${ROOT}/Source/core/Npno.cpp ${ROOT}/Source/core/PianoSound.cpp ${ROOT}/Source/core/PianoEngine.cpp)
+set(EXPORT ${ROOT}/Source/core/SfgrWriter.cpp ${ROOT}/Source/core/SampleEngine.cpp ${ROOT}/Source/core/NordSample.cpp)
+add_executable(decoder_test ${ROOT}/tests/decoder_test.cpp ${CORE})
+add_executable(engine_test ${ROOT}/tests/engine_test.cpp ${CORE})
+add_executable(sfgr_export_test ${ROOT}/tests/sfgr_export_test.cpp ${EXPORT})
+add_executable(piano_export_test ${ROOT}/tests/piano_export_test.cpp ${ROOT}/Source/core/PianoExport.cpp ${CORE} ${EXPORT})
+enable_testing()
+foreach(t decoder_test engine_test sfgr_export_test piano_export_test)
+    add_test(NAME ${t} COMMAND ${t} WORKING_DIRECTORY ${ROOT})
+endforeach()

@@ -1,0 +1,48 @@
+name Keys Test Multi
+variant synthetic
+version 6.00
+dir 1124 2 1022 12
+zone 46 36 47
+zone 58 48 59
+zone 70 60 71
+zone 95 72 96
+stroke 0 0 0 0 54099 44210 8710
+stroke 1 0 60 0 54508 44210 8710
+stroke 2 0 130 0 54703 44210 8710
+stroke 3 1 0 0 54448 44060 8860
+stroke 4 1 60 0 54032 44060 8860
+stroke 5 1 130 0 54508 44060 8860
+stroke 6 2 0 0 54144 44135 8785
+stroke 7 2 60 0 54448 44135 8785
+stroke 8 2 130 0 54240 44135 8785
+stroke 9 3 0 0 53059 44097 8823
+stroke 10 3 60 0 53634 44097 8823
+stroke 11 3 130 0 53131 44097 8823
+pick 0 1 2
+pick 0 20 2
+pick 0 40 2
+pick 0 64 1
+pick 0 90 0
+pick 0 110 0
+pick 0 127 0
+pick 1 1 5
+pick 1 20 5
+pick 1 40 5
+pick 1 64 4
+pick 1 90 3
+pick 1 110 3
+pick 1 127 3
+pick 2 1 8
+pick 2 20 8
+pick 2 40 8
+pick 2 64 7
+pick 2 90 6
+pick 2 110 6
+pick 2 127 6
+pick 3 1 11
+pick 3 20 11
+pick 3 40 11
+pick 3 64 10
+pick 3 90 9
+pick 3 110 9
+pick 3 127 9

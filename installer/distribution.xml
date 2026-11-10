@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Instalador de BeTracks Keys. build_public.sh sustituye @VERSION@. -->
+<installer-gui-script minSpecVersion="2">
+    <title>BeTracks Keys @VERSION@</title>
+    <organization>com.betracsec</organization>
+    <welcome file="welcome.html" mime-type="text/html"/>
+    <license file="LICENSE.txt" mime-type="text/plain"/>
+    <conclusion file="conclusion.html" mime-type="text/html"/>
+    <domains enable_localSystem="true"/>
+    <options customize="allow" require-scripts="false" hostArchitectures="arm64,x86_64"/>
+    <os-version min="12.0"/>
+    <choices-outline>
+        <line choice="app"/>
+        <line choice="au"/>
+        <line choice="vst3"/>
+    </choices-outline>
+    <choice id="app" title="App BeTracks Keys" description="La app independiente, en /Applications.">
+        <pkg-ref id="com.betracsec.keys.app"/>
+    </choice>
+    <choice id="au" title="Plugin Audio Unit (AU)" description="Para Logic Pro, GarageBand, MainStage y otros. En /Library/Audio/Plug-Ins/Components.">
+        <pkg-ref id="com.betracsec.keys.au"/>
+    </choice>
+    <choice id="vst3" title="Plugin VST3" description="Para Ableton Live, Cubase, Studio One, Reaper y otros. En /Library/Audio/Plug-Ins/VST3.">
+        <pkg-ref id="com.betracsec.keys.vst3"/>
+    </choice>
+    <pkg-ref id="com.betracsec.keys.app" version="@VERSION@">app.pkg</pkg-ref>
+    <pkg-ref id="com.betracsec.keys.au" version="@VERSION@">au.pkg</pkg-ref>
+    <pkg-ref id="com.betracsec.keys.vst3" version="@VERSION@">vst3.pkg</pkg-ref>
+</installer-gui-script>
