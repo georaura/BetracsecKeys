@@ -37,3 +37,6 @@ vendor/Sparkle/
 
 .DS_Store
 .claude/
+
+# Descargas generadas por build_public.sh (se suben a Hostinger, no a Git)
+website/keys/downloads/

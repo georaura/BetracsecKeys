@@ -1,4 +1,5 @@
 #include "SfgrExport.h"
+#include "KeysFolders.h"
 #include "KeysSampleFile.h"
 #include "../core/SfgrWriter.h"
 #include "../core/PianoExport.h"
@@ -82,7 +83,7 @@ void showResult (std::shared_ptr<State> st)
 
 void chooseTarget (std::shared_ptr<State> st)
 {
-    const auto folder = File::getSpecialLocation (File::userMusicDirectory).getChildFile ("Betracsec Keys").getChildFile ("BeTracks Pro");
+    const auto folder = bk::keysMusicFolder().getChildFile ("BeTracks Pro");
     folder.createDirectory();
     const auto name = File::createLegalFileName (st->sound->name.empty() ? st->source.getFileNameWithoutExtension()
                                                                          : String::fromUTF8 (st->sound->name.c_str()));

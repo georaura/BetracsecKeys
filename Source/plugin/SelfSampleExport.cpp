@@ -1,4 +1,5 @@
 #include "SelfSampleExport.h"
+#include "KeysFolders.h"
 #include "SelfSampler.h"
 #include "KeysSampleFile.h"
 #include "../core/SfgrWriter.h"
@@ -149,7 +150,7 @@ private:
 
 void chooseTarget (std::shared_ptr<State> st)
 {
-    const auto folder = File::getSpecialLocation (File::userMusicDirectory).getChildFile ("Betracsec Keys").getChildFile ("BeTracks Pro");
+    const auto folder = bk::keysMusicFolder().getChildFile ("BeTracks Pro");
     folder.createDirectory();
     st->chooser = std::make_unique<FileChooser> (String::fromUTF8 ("Guardar para BeTracks Pro"),
                                                  folder.getChildFile (File::createLegalFileName (st->name) + ".sfgr"), "*.sfgr");

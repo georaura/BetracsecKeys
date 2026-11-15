@@ -1,4 +1,5 @@
 #include "Autosampler.h"
+#include "KeysFolders.h"
 #include "AutosampleDsp.h"
 #include "KeysSampleFile.h"
 #include "PluginEditor.h"
@@ -86,7 +87,7 @@ bool parseMidiList (const String& text, int channel, std::vector<MidiMessage>& o
 
 File defaultFolder()
 {
-    return File::getSpecialLocation (File::userMusicDirectory).getChildFile ("Betracsec Keys").getChildFile ("Muestras");
+    return bk::keysMusicFolder().getChildFile ("Muestras");
 }
 
 std::unique_ptr<PropertiesFile> openSettings()

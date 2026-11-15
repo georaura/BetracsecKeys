@@ -101,11 +101,25 @@ sed "s/@VERSION@/$VERSION/g" installer/distribution.xml > "$OUT/distribution.xml
 PKG_NAME="$EXE-$VERSION.pkg"
 PKG="$OUT/$PKG_NAME"
 rm -f "$PKG"
+# zsh no separa palabras: «${X:+--sign "$X" --timestamp}» llegaría como un solo argumento. Por eso, una lista.
+PKG_SIGN=()
+[ -n "$INSTALLER_ID" ] && PKG_SIGN=(--sign "$INSTALLER_ID" --timestamp)
 productbuild --distribution "$OUT/distribution.xml" --package-path "$PKGS" --resources "$RES" \
-  ${INSTALLER_ID:+--sign "$INSTALLER_ID" --timestamp} "$PKG" >/dev/null
+  "${PKG_SIGN[@]}" "$PKG" >/dev/null
 
 NOTARIZED=0
-notarize() { xcrun notarytool submit "$1" --keychain-profile "$NOTARY_PROFILE" --wait && xcrun stapler staple "$1"; }
+# Apple puede responder «Invalid» sin que notarytool falle: se comprueba el estado y, si no es Accepted, se para.
+notarize() {
+  local out
+  out="$(xcrun notarytool submit "$1" --keychain-profile "$NOTARY_PROFILE" --wait 2>&1)"
+  print -r -- "$out" | grep -v "Current status: In Progress"
+  if ! print -r -- "$out" | grep -q "status: Accepted"; then
+    local id="$(print -r -- "$out" | awk '/^ *id:/ {print $2; exit}')"
+    echo "Apple no aceptó $1. Detalle: xcrun notarytool log $id --keychain-profile $NOTARY_PROFILE"
+    exit 1
+  fi
+  xcrun stapler staple "$1"
+}
 if [ -n "$DEVID" ] && [ -n "$INSTALLER_ID" ] && [ -n "${NOTARY_PROFILE:-}" ]; then
   echo "Notarizando el instalador (puede tardar unos minutos)…"
   notarize "$PKG"
